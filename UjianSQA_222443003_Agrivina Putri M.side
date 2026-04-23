@@ -1,0 +1,253 @@
+{
+  "id": "fac15072-8210-4fe7-86af-3eb37f3a5d52",
+  "version": "2.0",
+  "name": "UjianSQA_222443003_Agrivina Putri M",
+  "url": "http://localhost/penjualan",
+  "tests": [{
+    "id": "3d2e870d-49a7-4423-89d0-8501aa5f9f75",
+    "name": "TC-01 Login Valid",
+    "commands": [{
+      "id": "59abd3b3-6ee8-493a-9d6f-f16a7deb5d79",
+      "comment": "",
+      "command": "open",
+      "target": "/penjualan/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e001fdea-f6a7-4e5e-a204-5f5e3926bfe0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value = 'admin';",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d38a93e-aac1-4e10-be23-ab0b34bd586d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value = 'admin123';",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35cb548e-bc65-4a13-944b-be1365d502d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "295bb50f-4cb9-4dd6-891c-55bba10c5eef",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h1",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "c897c7b0-6456-4a58-9e2c-cde25beb6838",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Dashboard Sistem Penjualan"
+    }]
+  }, {
+    "id": "bf8ca5de-e71b-4b2e-8b98-55ff454fcc8b",
+    "name": "TC-02 Akses Halaman Transaksi Baru",
+    "commands": [{
+      "id": "71a86736-1cea-485b-96aa-64386a2a11ee",
+      "comment": "",
+      "command": "open",
+      "target": "/penjualan/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7470f0f2-7413-4974-bf57-56a52cfd83bb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value = 'admin';",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d380fc7-da8c-459b-bc3a-6caf65a52bb6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value = 'admin123';",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b98894af-0673-4778-a2cd-df915e150e08",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9c92f83-a0de-4ddb-8161-c742d76d01d0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h1",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "906ef0ed-6c62-4dfa-91e6-80b130ea09f9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Dashboard Sistem Penjualan"
+    }, {
+      "id": "1b50e1cf-8967-4695-9caa-b1f6a5eaeae0",
+      "comment": "",
+      "command": "open",
+      "target": "/penjualan/transaksi_create.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "252697b5-1986-4537-b105-4fba821d4e4b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=pelanggan_id",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "074ba85c-6380-4323-924b-d99744835d01",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=produk_id",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92cb3887-38b9-45fb-a1c4-3563c142ff38",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=btnTambah",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1a462330-187a-46c7-bcbf-256c2c74a221",
+    "name": "TC-03 Penambahan Item ke Keranjang",
+    "commands": [{
+      "id": "4635d12e-c6dd-452c-a0e9-4a01bb0f1dec",
+      "comment": "",
+      "command": "open",
+      "target": "/penjualan/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d619128-052d-4ce0-94e0-8da2439c8528",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value = 'admin';",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4026db93-b7a3-4fd6-9135-7fd3cf6e6c32",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value = 'admin123';",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aedcf29-c6de-47e8-8207-2abdd1553f33",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2905f68e-7da9-4515-80b3-66cf44939d3a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h1",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "2c6d98a4-fcbb-441f-8537-ae7a50b5d0c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Dashboard Sistem Penjualan"
+    }, {
+      "id": "6b82630f-d2c8-425b-be4e-6addb0e26453",
+      "comment": "",
+      "command": "open",
+      "target": "/penjualan/transaksi_create.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "884dcfb4-557f-4a22-97fe-31317d2831fd",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#pelanggan_id option:nth-child(2)",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "623d33e0-8fc3-4bd5-a043-abefa05e504a",
+      "comment": "",
+      "command": "select",
+      "target": "id=pelanggan_id",
+      "targets": [],
+      "value": "label=Budi Santoso"
+    }, {
+      "id": "fcf4039a-c94a-40b7-9f83-fd3b2534607c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#produk_id option:nth-child(2)",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "257c060a-9648-44df-a795-d0ebcc1741a0",
+      "comment": "",
+      "command": "select",
+      "target": "id=produk_id",
+      "targets": [],
+      "value": "label=Pensil 2B (Stok: 96)"
+    }, {
+      "id": "9fabf2b8-bfff-40e5-a6fc-0709143ef051",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('qty').value = '2';",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8a25252-dc01-4447-8cad-2728ab3b0264",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnTambah",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3f95caf-a33f-4c16-9229-ef7bb00e5a2a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#keranjang tbody tr",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "0c4dc1af-af90-4a4c-84c9-ec1520e86a70",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#keranjang tbody tr:first-child td:nth-child(1)",
+      "targets": [],
+      "value": "Pensil 2B"
+    }, {
+      "id": "cb84aa37-2375-49be-9659-8428bcaff011",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#keranjang tbody tr:first-child td:nth-child(3)",
+      "targets": [],
+      "value": "2"
+    }]
+  }],
+  "suites": [{
+    "id": "aba838a4-713d-4ff8-9b87-bf1e5b3c91de",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/penjualan"],
+  "plugins": []
+}
